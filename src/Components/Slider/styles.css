@@ -28,7 +28,12 @@ body {
   margin: auto 0px;
 }
 .swiper.swiper-initialized.swiper-horizontal.swiper-free-mode.swiper-watch-progress.swiper-backface-hidden.mySwiper.swiper-thumbs {
-  height: 284px;
+  height: 400px;
+  width: 750px;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  border: 5px solid #fff;  
 }
 /* My custom code */
 

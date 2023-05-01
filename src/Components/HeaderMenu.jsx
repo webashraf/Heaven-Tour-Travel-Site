@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HeaderMenu = () => {
   return (
     <>
-      <div className="navbar bg-base-100 justify-between sticky top-0 z-10 bg-transparent">
+      <div className="navbar bg-base-100 justify-around sticky top-0 z-10 bg-transparent">
         <div className="navbar-start justify-between lg:justify-normal w-full lg:w-auto">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -42,7 +43,9 @@ const HeaderMenu = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">Heaven Tour</a>
+          <Link to={"/"} className="btn btn-ghost normal-case text-xl">
+          <img className="w-40" src="heaven_logo.png" alt="" />
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <div className="form-control">
@@ -54,7 +57,7 @@ const HeaderMenu = () => {
           </div>
         </div>
         <div className="navbar-end hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 flex items-center gap-9">
+          <ul className="menu menu-horizontal px-1 flex items-center gap-9 text-white">
             <li>News</li>
             <li>Destination</li>
             <li>Blog</li>
